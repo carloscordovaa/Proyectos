@@ -11,7 +11,7 @@ import Tienda.*;
  * Vamos a transformar objetos a json, usando la libreria de Gson de Google.
  * Nos Conectaremos a la base de datos de MongoDB.
  * Configuremos el JDK 1.8 
- * Importemos el proyecto a un repositorio Git Hub
+ * Importemos el proyecto a un repositorio Git Hub 
  */
 public class App 
 {
