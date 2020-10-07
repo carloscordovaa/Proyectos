@@ -31,7 +31,7 @@ public class App
     	String clave_cliente = scanner.nextLine();
     	System.out.println("Gracias, Datos Guardados");
     	
-    	//Tienda   tda  = new Tienda();
+    	
     	Cliente  cli  = new Cliente();
     	
     	cli.setNombre(name_cliente);
@@ -49,7 +49,23 @@ public class App
     	
     	
     	
+    	System.out.println("Bienvenido a miTienda");
     	
+    	System.out.println("¿Cómo se llama su tienda?");
+    	String name_tienda = scanner.nextLine();
+    	System.out.println("¿Dirección?");
+    	String direccion_tienda = scanner.nextLine();
+    	
+    	System.out.println("Gracias, Datos Guardados");
+    	
+    	Tienda   tda  = new Tienda();
+    	tda.setNombre(name_tienda);
+    	tda.setDirecion(direccion_tienda);
+    	
+    	System.out.println("Creando json TIENDA..");
+    	Gson gson02 = new Gson();
+    	String jsonTienda = gson.toJson(tda);
+    	System.out.println(jsonTienda);
     	
     	
     }
